@@ -1,0 +1,66 @@
+/* Nur Bildbereiche und ihre Bedienung; das vollständige Seitendesign folgt später. */
+.slideshow {
+  width: 100%;
+  max-width: 640px;
+  margin-block: 1rem;
+}
+
+.slideshow__images > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Ein fester Bildbereich verhindert Sprünge zwischen Hoch- und Querformat. */
+.slideshow--ready .slideshow__images {
+  aspect-ratio: 4 / 3;
+  background: #f2f2f2;
+}
+
+.slideshow--ready .slideshow__images > img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.slideshow__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.slideshow__controls button {
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #111;
+  background: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.slideshow__controls button:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+/* Eigene display-Regeln dürfen das hidden-Attribut nicht überschreiben. */
+.slideshow [hidden] {
+  display: none;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+}
+
+@media (min-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

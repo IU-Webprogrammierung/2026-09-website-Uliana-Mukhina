@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Unser persönlicher Reiserückblick 2026: Erinnerungen an Innsbruck mit Hund Franny, Seoul und Da Nang.">
     <title>Unser Reiserückblick 2026 | Uliana Mukhina</title>
+    <link rel="stylesheet" href="assets/css/slideshow.css">
+    <script src="assets/js/slideshow.js" defer></script>
   </head>
   <body>
     <a href="#hauptinhalt">Zum Hauptinhalt springen</a>
@@ -29,18 +31,35 @@
         <p>Von den Bergen in Innsbruck bis zu unserer ersten Asienreise nach Seoul und Da Nang:
           Hier halten wir unsere Reiseerlebnisse aus dem Jahr 2026 fest.
           Wir erzählen, was uns begeistert hat und was uns weniger gefallen hat.</p>
-        <div role="group" aria-label="Einblicke in unsere Reisen">
-          <img src="assets/images/innsbruck.JPG"
-            alt="Gemeinsames Foto mit Franny vor schneebedeckten Berggipfeln bei Innsbruck unter blauem Himmel."
-            style="width: 100%; max-width: 480px; height: auto;">
-          <img src="assets/images/seoul-gasse.jpg"
-            alt="Gemeinsames Selfie in einer schmalen Gasse in Seoul mit Holztüren und Ziegeldächern."
-            style="width: 100%; max-width: 480px; height: auto;"
-            loading="lazy">
-          <img src="assets/images/danang1.JPG"
-            alt="Häuser mit dunklen Ziegeldächern zwischen Palmen an einer grünen Küste bei Da Nang."
-            style="width: 100%; max-width: 480px; height: auto;"
-            loading="lazy">
+        <div id="rueckblick-bilder" class="slideshow" data-slideshow role="group" aria-label="Unser Reiserückblick">
+          <div id="rueckblick-bilder-fotos" class="slideshow__images">
+            <img src="assets/images/reiserückblick1.JPG"
+              alt="Gemeinsames Selfie auf einer roten Sitzbank im Zug."
+              loading="eager">
+            <img src="assets/images/reiserückblick2.JPG"
+              alt="Ein Paar mit Hund steht auf einem verschneiten Gipfel vor einer weiten Bergkette."
+              loading="lazy">
+            <img src="assets/images/reiserückblick3.JPG"
+              alt="Eine Frau mit blauem Regenschirm vor einem traditionellen Gebäude zwischen Bäumen."
+              loading="lazy">
+            <img src="assets/images/reiserückblick4.jpg"
+              alt="Gemeinsames Selfie vor einer geschwungenen Brücke, die von großen steinernen Händen getragen wird."
+              loading="lazy">
+            <img src="assets/images/reiserückblick5.JPG"
+              alt="Traditioneller Pavillon auf Säulen an einem Teich, eingerahmt von Bäumen."
+              loading="lazy">
+            <img src="assets/images/reiserückblick6.jpg"
+              alt="Gemeinsames Selfie auf einer Dachterrasse vor der Stadt im Abendlicht."
+              loading="lazy">
+            <img src="assets/images/reiserückblick7.JPG"
+              alt="Pool vor einem Sandstrand mit Palmen, Sonnenschirmen und Surfbrettern."
+              loading="lazy">
+          </div>
+          <div class="slideshow__controls" hidden>
+            <button type="button" data-previous aria-controls="rueckblick-bilder-fotos" aria-label="Vorheriges Bild – Unser Reiserückblick">← Zurück</button>
+            <span data-counter role="status" aria-live="polite" aria-atomic="true"></span>
+            <button type="button" data-next aria-controls="rueckblick-bilder-fotos" aria-label="Nächstes Bild – Unser Reiserückblick">Weiter →</button>
+          </div>
         </div>
         <a href="#reiseziele">Entdecken</a>
       </section>
@@ -86,10 +105,45 @@
           <ul>
             <li>Es gab sehr wenig Schnee, selbst in den Bergen.</li>
           </ul>
-          <img src="assets/images/innsbruck.JPG"
-            alt="Gemeinsames Foto mit Franny vor schneebedeckten Berggipfeln bei Innsbruck unter blauem Himmel."
-            style="width: 100%; max-width: 480px; height: auto;"
-            loading="lazy">
+          <div id="innsbruck-bilder" class="slideshow" data-slideshow role="group" aria-label="Innsbruck">
+            <div id="innsbruck-bilder-fotos" class="slideshow__images">
+              <img src="assets/images/innsbruck.JPG"
+                alt="Gemeinsames Foto mit Franny vor schneebedeckten Berggipfeln bei Innsbruck unter blauem Himmel."
+                loading="lazy">
+              <img src="assets/images/innsbruck2.jpg"
+                alt="Straße in Innsbruck mit historischen Häusern und schneebedeckten Bergen im Hintergrund."
+                loading="lazy">
+              <img src="assets/images/innsbruck3.JPG"
+                alt="Eine Frau hält Franny im Schnee vor einer Bergstation und einem weiten Bergpanorama."
+                loading="lazy">
+              <img src="assets/images/innsbruck4.JPG"
+                alt="Franny steht im grauen Winteranzug auf einem verschneiten Weg neben Nadelbäumen."
+                loading="lazy">
+              <img src="assets/images/innsbruck5.JPG"
+                alt="Skifahrer auf einer verschneiten Piste mit Sessellift und bewaldeten Berghängen."
+                loading="lazy">
+              <img src="assets/images/innsbruck6.JPG"
+                alt="Franny blickt im grauen Winteranzug zwischen unseren Schuhen aus dem Schnee nach oben."
+                loading="lazy">
+              <img src="assets/images/innsbruck7.JPG"
+                alt="Gemeinsames Selfie in Winterkleidung in einem Bus."
+                loading="lazy">
+              <img src="assets/images/innsbruck8.JPG"
+                alt="Blick von oben auf Innsbruck mit Fluss, Brücken und Wohnhäusern."
+                loading="lazy">
+              <img src="assets/images/innsbruck9.JPG"
+                alt="Ein Haus mit rotem Dach an einer Haltestelle vor wolkenverhangenen Berggipfeln."
+                loading="lazy">
+              <img src="assets/images/innsbruck10.JPG"
+                alt="Eine Frau mit Sonnenbrille hält Franny vor einem felsigen, teilweise verschneiten Bergpanorama."
+                loading="lazy">
+            </div>
+            <div class="slideshow__controls" hidden>
+              <button type="button" data-previous aria-controls="innsbruck-bilder-fotos" aria-label="Vorheriges Bild – Innsbruck">← Zurück</button>
+              <span data-counter role="status" aria-live="polite" aria-atomic="true"></span>
+              <button type="button" data-next aria-controls="innsbruck-bilder-fotos" aria-label="Nächstes Bild – Innsbruck">Weiter →</button>
+            </div>
+          </div>
         </article>
 
         <article id="seoul" aria-labelledby="seoul-titel">
@@ -111,10 +165,42 @@
             <li>Drei Tage waren für uns zu kurz; fünf Tage bis eine Woche wären besser gewesen.</li>
             <li>Die Verständigung auf Englisch war bei unseren Begegnungen häufig schwierig.</li>
           </ul>
-          <img src="assets/images/seoul-gasse.jpg"
-            alt="Gemeinsames Selfie in einer schmalen Gasse in Seoul mit Holztüren, Ziegeldächern und Blumentöpfen."
-            style="width: 100%; max-width: 480px; height: auto;"
-            loading="lazy">
+          <div id="seoul-bilder" class="slideshow" data-slideshow role="group" aria-label="Seoul">
+            <div id="seoul-bilder-fotos" class="slideshow__images">
+              <img src="assets/images/seoul-gasse.jpg"
+                alt="Gemeinsames Selfie in einer schmalen Gasse in Seoul mit Holztüren, Ziegeldächern und Blumentöpfen."
+                loading="lazy">
+              <img src="assets/images/seoul2.JPG"
+                alt="Blick auf unsere Hände mit mehreren Einkaufstüten nach einem Einkaufsbummel."
+                loading="lazy">
+              <img src="assets/images/seoul3.JPG"
+                alt="Eine Frau geht durch ein kleines Tor zwischen traditionellen Gebäuden mit geschwungenen Ziegeldächern."
+                loading="lazy">
+              <img src="assets/images/seoul4.JPG"
+                alt="Straßenkreuzung in Seoul mit gelben Ampeln und blauen Straßenschildern."
+                loading="lazy">
+              <img src="assets/images/seoul5.JPG"
+                alt="Gemeinsames Selfie vor hohen, beleuchteten Bücherregalen in einer Bibliothek."
+                loading="lazy">
+              <img src="assets/images/seoul6.JPG"
+                alt="Gemeinsames Selfie unter dem bunt verzierten Dach eines traditionellen Gebäudes."
+                loading="lazy">
+              <img src="assets/images/seoul7.JPG"
+                alt="Traditionelle Gebäude mit grauen Ziegeldächern hinter einer Steinbrücke über einen Teich."
+                loading="lazy">
+              <img src="assets/images/seoul8.JPG"
+                alt="Eine Frau steht vor einer Galerie und einem Schaufenster an einem gelben Fußgängerüberweg."
+                loading="lazy">
+              <img src="assets/images/seoul9.JPG"
+                alt="Kleiner Innenhof mit einer Kiefer und Kies vor einem Restaurant mit Holzrahmen und Ziegeldach."
+                loading="lazy">
+            </div>
+            <div class="slideshow__controls" hidden>
+              <button type="button" data-previous aria-controls="seoul-bilder-fotos" aria-label="Vorheriges Bild – Seoul">← Zurück</button>
+              <span data-counter role="status" aria-live="polite" aria-atomic="true"></span>
+              <button type="button" data-next aria-controls="seoul-bilder-fotos" aria-label="Nächstes Bild – Seoul">Weiter →</button>
+            </div>
+          </div>
         </article>
 
         <article id="da-nang" aria-labelledby="da-nang-titel">
@@ -142,7 +228,7 @@
             <li>Das Meer war uns zum Schwimmen zu kalt.</li>
             <li>Die starke Sonne machte häufiges Eincremen nötig.</li>
           </ul>
-          <div role="group" aria-label="Reisefotos aus Da Nang">
+          <div class="photo-grid" role="group" aria-label="Reisefotos aus Da Nang">
             <img src="assets/images/danang1.JPG"
               alt="Häuser mit dunklen Ziegeldächern zwischen Palmen an einer grünen Küste bei Da Nang."
               style="width: 100%; max-width: 480px; height: auto;"
