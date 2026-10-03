@@ -1,8 +1,8 @@
-# Unser Reiserückblick 2025–2026
+# Unser Reiserückblick 2026
 
 ## Projektidee und Ziel
 
-Die Website stellt Uliana, Alexander und ihren Hund Franny sowie Reiseerinnerungen von Dezember 2025 bis März 2026 vor. Persönliche Berichte über Innsbruck, Seoul und Da Nang beschreiben Erlebnisse, Bewertungen und Eindrücke. Acht eigene Fotos ergänzen die Vorstellung und die Reiseberichte; für den Einstieg werden drei davon wiederverwendet. Der Webauftritt richtet sich an Menschen, die unsere Reiseerlebnisse kennenlernen und Anregungen für eigene Reisen erhalten möchten.
+Die Website stellt Uliana, Alexander und ihren Hund Franny sowie Reiseerinnerungen aus dem Jahr 2026 vor. Persönliche Berichte über Innsbruck, Seoul und Da Nang beschreiben Erlebnisse, Bewertungen und Eindrücke. Acht eigene Fotos ergänzen die Vorstellung und die Reiseberichte; für den Einstieg werden drei davon wiederverwendet. Der Webauftritt richtet sich an Menschen, die unsere Reiseerlebnisse kennenlernen und Anregungen für eigene Reisen erhalten möchten.
 
 Die Website ist als eine zusammenhängende Seite geplant. Über die Navigation können Besucher direkt zu den einzelnen Abschnitten springen. Grundlage sind die handgezeichneten Skizzen für die Desktop- und Mobilansicht.
 
@@ -11,10 +11,10 @@ Die Website ist als eine zusammenhängende Seite geplant. Über die Navigation k
 | Abschnitt | Inhalte | Navigationsziel |
 | --- | --- | --- |
 | Kopfbereich | Schriftzug „Reisen“ als Link zum Seitenanfang und Navigation | `#start` |
-| Einstieg | Überschrift „Unser Reiserückblick 2025–2026“, Bildergalerie und Link „Entdecken“ zur Reiseübersicht | `#start` |
+| Einstieg | Überschrift „Unser Reiserückblick 2026“, Bildergalerie und Link „Entdecken“ zur Reiseübersicht | `#start` |
 | Wir | Vorstellung von Uliana, Alexander und Franny sowie ein gemeinsames Foto | `#wir` |
 | Reiseziele | Kurze Übersicht mit Links zu den drei Reiseberichten | `#reiseziele` |
-| Innsbruck | Dezember 2025, Erfahrungsbericht, eigene Bewertung, „Gefallen“, „Nicht gefallen“ und ein Foto | `#innsbruck` |
+| Innsbruck | Januar 2026, Erfahrungsbericht, eigene Bewertung, „Gefallen“, „Nicht gefallen“ und ein Foto | `#innsbruck` |
 | Seoul | März 2026, Erfahrungsbericht, eigene Bewertung, „Gefallen“, „Nicht gefallen“ und ein Foto | `#seoul` |
 | Da Nang | März 2026, Erfahrungsbericht, eigene Bewertung, „Gefallen“, „Nicht gefallen“ und vier Fotos | `#da-nang` |
 | Kontakt | Kontakttext und externer Link zum Instagram-Profil `hey.uliana`; gemeinsames Strandfoto; kein Formular | `#kontakt` |
@@ -22,7 +22,7 @@ Die Website ist als eine zusammenhängende Seite geplant. Über die Navigation k
 
 Die Reiseübersicht konkretisiert das Navigationsziel „Reiseziele“ aus den Skizzen. Die Bewertungen sind unsere eigenen, festen Einschätzungen auf einer Skala bis 5. Sie werden als eindeutige Zahlen ausgeschrieben, damit auch halbe Punkte verständlich sind. Eine spätere Darstellung mit Flugzeugsymbolen kann die Textangabe ergänzen. Eine Bewertungsfunktion für Besucher ist nicht vorgesehen.
 
-Innsbrucks Reisezeitraum wurde auf Dezember 2025 korrigiert; die Skizzen müssen für die PDF-Abgabe entsprechend aktualisiert werden.
+Alle Reisen sind dem Jahr 2026 zugeordnet. Innsbrucks Reisezeitraum ist Januar 2026; die Skizzen müssen für die PDF-Abgabe entsprechend beschriftet werden.
 
 ## Geplantes responsives Verhalten
 
