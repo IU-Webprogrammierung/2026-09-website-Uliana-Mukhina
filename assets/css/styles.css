@@ -1,0 +1,90 @@
+/* Mobile zuerst: Die Grundregeln gelten auch ohne Media Query. */
+:root {
+  --paper: #f7f4ed;
+  --surface: #eeeadf;
+  --ink: #243e36;
+  --muted: #58635c;
+  --accent: #99472f;
+  --line: #cecfc3;
+  --focus: #005fcc;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+[hidden] { display: none !important; }
+
+img { display: block; max-width: 100%; height: auto; }
+button { font: inherit; cursor: pointer; }
+a { color: inherit; text-underline-offset: 0.25em; }
+a:hover { color: var(--accent); }
+p { margin: 0 0 1.15rem; }
+ul { padding-left: 1.25rem; }
+li + li { margin-top: 0.4rem; }
+
+h1, h2, h3 {
+  margin: 0 0 1.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+h1 { font-size: clamp(2.2rem, 4.5vw, 4.5rem); letter-spacing: -0.045em; }
+h1 em { color: var(--accent); font-weight: 400; }
+h2 { font-size: clamp(2rem, 3.4vw, 3.25rem); letter-spacing: -0.035em; }
+h3 { font-size: clamp(1.8rem, 3vw, 2.7rem); letter-spacing: -0.025em; }
+h4 { margin: 1.5rem 0 0.6rem; font-size: 1rem; }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 5px; }
+section, article, main { scroll-margin-top: 1.5rem; }
+
+.container { width: min(100% - 2.5rem, 1200px); margin-inline: auto; }
+.section-block { padding-block: 3.5rem; border-top: 1px solid var(--line); }
+.eyebrow {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: var(--paper);
+  transform: translateY(-180%);
+}
+.skip-link:focus { transform: translateY(0); }
+.header-inner > *, .hero > *, .about > *, .contact > * { min-width: 0; }
+
+.button { display: inline-flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 48px; padding: 0.7rem 1.2rem; color: var(--paper); background: var(--ink); text-decoration: none; font-size: 0.9rem; }
+.button:hover { color: var(--paper); background: var(--accent); }
+.button span { font-size: 1.25rem; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+.site-footer p { margin: 0; }
+.site-footer a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Tablet: Der Wir-Bereich nutzt als erster Abschnitt zwei Spalten. */
+@media (min-width: 768px) {
+  .container { width: min(100% - 4rem, 1200px); }
+  .section-block { padding-block: 4.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
