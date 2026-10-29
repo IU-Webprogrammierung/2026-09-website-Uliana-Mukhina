@@ -30,9 +30,12 @@
       </div>
     </header>
     <main id="hauptinhalt" class="container" tabindex="-1">
-      <section id="start" aria-labelledby="start-titel" tabindex="-1">
-        <h1 id="start-titel">Unser Reiserückblick 2026</h1>
-        <p>Von den Bergen in Innsbruck bis zu unserer ersten Asienreise nach Seoul und Da Nang: Hier halten wir unsere Reiseerlebnisse aus dem Jahr 2026 fest. Wir erzählen, was uns begeistert hat und was uns weniger gefallen hat.</p>
+      <section id="start" class="hero" aria-labelledby="start-titel" tabindex="-1">
+        <div class="hero__intro">
+          <p class="eyebrow">Unterwegs mit Uliana &amp; Alexander</p>
+          <h1 id="start-titel">Unser<br> <em>Reiserückblick</em><br> 2026.</h1>
+          <p>Von den Bergen in Innsbruck bis zu unserer ersten Asienreise nach Seoul und Da Nang: Hier halten wir unsere Reiseerlebnisse aus dem Jahr 2026 fest. Wir erzählen, was uns begeistert hat und was uns weniger gefallen hat.</p>
+        </div>
         <div id="rueckblick-bilder" class="slideshow" data-slideshow role="group" aria-label="Unser Reiserückblick">
           <div id="rueckblick-bilder-fotos" class="slideshow__images">
             <img src="assets/images/reiserückblick1.JPG"
@@ -77,7 +80,7 @@
             <button type="button" data-next aria-controls="rueckblick-bilder-fotos" aria-label="Nächstes Bild – Unser Reiserückblick">Weiter →</button>
           </div>
         </div>
-        <a href="#reiseziele">Entdecken</a>
+        <a class="button hero__link" href="#reiseziele">Reiseziele entdecken <span aria-hidden="true">↗</span></a>
       </section>
       <section id="wir" aria-labelledby="wir-titel" tabindex="-1">
         <h2 id="wir-titel">Wir sind Uliana, Alexander und Franny</h2>
