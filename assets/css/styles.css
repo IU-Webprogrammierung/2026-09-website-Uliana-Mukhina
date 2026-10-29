@@ -70,7 +70,22 @@ section, article, main { scroll-margin-top: 1.5rem; }
   transform: translateY(-180%);
 }
 .skip-link:focus { transform: translateY(0); }
+
+/* Flexbox lässt das mobile Menü in eine eigene Zeile umbrechen. */
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.5rem; padding-block: 1rem; }
 .header-inner > *, .hero > *, .about > *, .contact > * { min-width: 0; }
+.brand { text-decoration: none; font-family: Georgia, serif; font-size: 2rem; letter-spacing: -0.07em; }
+.brand span { color: var(--accent); }
+.menu-toggle { display: inline-flex; align-items: center; gap: 0.75rem; min-height: 44px; padding: 0.45rem 0.85rem; border: 1px solid var(--line); background: transparent; color: var(--ink); }
+.menu-icon { position: relative; display: block; width: 18px; height: 10px; border-block: 1px solid currentColor; }
+.menu-icon::after { content: ""; position: absolute; top: 3.5px; width: 100%; border-top: 1px solid currentColor; }
+.menu-toggle[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+#hauptnavigation { flex-basis: 100%; }
+#hauptnavigation ul { display: flex; flex-direction: column; gap: 0.25rem; list-style: none; margin: 0.5rem 0 0; padding: 0; }
+#hauptnavigation li { margin: 0; }
+#hauptnavigation a { display: block; padding: 0.65rem 0.5rem; text-decoration: none; font-size: 0.9rem; }
+#hauptnavigation a:hover { background: var(--surface); }
 
 .button { display: inline-flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 48px; padding: 0.7rem 1.2rem; color: var(--paper); background: var(--ink); text-decoration: none; font-size: 0.9rem; }
 .button:hover { color: var(--paper); background: var(--accent); }
@@ -83,6 +98,13 @@ section, article, main { scroll-margin-top: 1.5rem; }
 @media (min-width: 768px) {
   .container { width: min(100% - 4rem, 1200px); }
   .section-block { padding-block: 4.5rem; }
+}
+
+/* Desktop: Text und Bilder folgen den wechselnden Spalten der Papierskizze. */
+@media (min-width: 1024px) {
+  .header-inner { flex-wrap: nowrap; }
+  #hauptnavigation { flex-basis: auto; }
+  #hauptnavigation ul { flex-direction: row; flex-wrap: wrap; gap: 0.4rem; margin: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

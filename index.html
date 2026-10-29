@@ -8,25 +8,29 @@
     <meta name="theme-color" content="#f7f4ed">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/slideshow.css">
+    <script src="assets/js/navigation.js" defer></script>
     <script src="assets/js/slideshow.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#hauptinhalt">Zum Hauptinhalt springen</a>
-    <header>
-      <a href="#start">Reisen</a>
-      <nav aria-label="Hauptnavigation">
-        <ul>
-          <li><a href="#wir">Wir</a></li>
-          <li><a href="#reiseziele">Reiseziele</a></li>
-          <li><a href="#innsbruck">Innsbruck</a></li>
-          <li><a href="#seoul">Seoul</a></li>
-          <li><a href="#da-nang">Da Nang</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#start" aria-label="Reisen – zum Seitenanfang">Reisen<span aria-hidden="true">.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptnavigation" hidden> <span>Menü</span><span class="menu-icon" aria-hidden="true"></span> </button>
+        <nav id="hauptnavigation" aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="#wir">Wir</a></li>
+            <li><a href="#reiseziele">Reiseziele</a></li>
+            <li><a href="#innsbruck">Innsbruck</a></li>
+            <li><a href="#seoul">Seoul</a></li>
+            <li><a href="#da-nang">Da Nang</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main id="hauptinhalt" class="container" tabindex="-1">
-      <section id="start" aria-labelledby="start-titel">
+      <section id="start" aria-labelledby="start-titel" tabindex="-1">
         <h1 id="start-titel">Unser Reiserückblick 2026</h1>
         <p>Von den Bergen in Innsbruck bis zu unserer ersten Asienreise nach Seoul und Da Nang: Hier halten wir unsere Reiseerlebnisse aus dem Jahr 2026 fest. Wir erzählen, was uns begeistert hat und was uns weniger gefallen hat.</p>
         <div id="rueckblick-bilder" class="slideshow" data-slideshow role="group" aria-label="Unser Reiserückblick">
@@ -75,7 +79,7 @@
         </div>
         <a href="#reiseziele">Entdecken</a>
       </section>
-      <section id="wir" aria-labelledby="wir-titel">
+      <section id="wir" aria-labelledby="wir-titel" tabindex="-1">
         <h2 id="wir-titel">Wir sind Uliana, Alexander und Franny</h2>
         <p>Wir sind Uliana und Alexander, und zu uns gehört unser Hund Franny. Im Januar 2026 ging es für uns gemeinsam mit Franny nach Innsbruck. Für mich, Uliana, war es die erste Reise seit langer Zeit und die erste mit unserem Hund.</p>
         <p>2026 führte uns unsere erste Asienreise nach Seoul und Da Nang. Auf dieser Seite teilen wir persönliche Erinnerungen, Eindrücke und Bewertungen unserer Reisen.</p>
@@ -86,14 +90,14 @@
           style="width: 100%; max-width: 480px; height: auto;"
           loading="lazy">
       </section>
-      <section id="reiseziele" aria-labelledby="reiseziele-titel">
+      <section id="reiseziele" aria-labelledby="reiseziele-titel" tabindex="-1">
         <h2 id="reiseziele-titel">Unsere Reiseziele</h2>
         <ul>
           <li><a href="#innsbruck">Innsbruck – Januar 2026</a></li>
           <li><a href="#seoul">Seoul – März 2026</a></li>
           <li><a href="#da-nang">Da Nang – März 2026</a></li>
         </ul>
-        <article id="innsbruck" aria-labelledby="innsbruck-titel">
+        <article id="innsbruck" aria-labelledby="innsbruck-titel" tabindex="-1">
           <h3 id="innsbruck-titel">Innsbruck, Österreich</h3>
           <p>Reisezeitraum: <time datetime="2026-01">Januar 2026</time></p>
           <p><strong>Unsere Bewertung: 4,5 von 5</strong></p>
@@ -169,7 +173,7 @@
             </div>
           </div>
         </article>
-        <article id="seoul" aria-labelledby="seoul-titel">
+        <article id="seoul" aria-labelledby="seoul-titel" tabindex="-1">
           <h3 id="seoul-titel">Seoul, Südkorea</h3>
           <p>Reisezeitraum: <time datetime="2026-03">März 2026</time></p>
           <p><strong>Unsere Bewertung: 5 von 5</strong></p>
@@ -240,7 +244,7 @@
             </div>
           </div>
         </article>
-        <article id="da-nang" aria-labelledby="da-nang-titel">
+        <article id="da-nang" aria-labelledby="da-nang-titel" tabindex="-1">
           <h3 id="da-nang-titel">Da Nang, Vietnam</h3>
           <p>Reisezeitraum: <time datetime="2026-03">März 2026</time></p>
           <p><strong>Unsere Bewertung: 4,5 von 5</strong></p>
@@ -288,7 +292,7 @@
           </div>
         </article>
       </section>
-      <section id="kontakt" aria-labelledby="kontakt-titel">
+      <section id="kontakt" aria-labelledby="kontakt-titel" tabindex="-1">
         <h2 id="kontakt-titel">Kontakt</h2>
         <p>Du möchtest dich mit mir über unsere Reisen austauschen? Du findest mich auf Instagram:</p>
         <p><a href="https://www.instagram.com/hey.uliana/">@hey.uliana auf Instagram</a></p>
