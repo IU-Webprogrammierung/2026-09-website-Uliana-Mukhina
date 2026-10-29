@@ -1,26 +1,12 @@
-/* Nur Bildbereiche und ihre Bedienung; das vollständige Seitendesign folgt später. */
-.slideshow {
-  width: 100%;
-  max-width: 640px;
-  margin-block: 1rem;
-}
+/* Die Bildwechsel funktionieren unabhängig vom restlichen Seitenlayout. */
+.slideshow { width: 100%; min-width: 0; margin: 0; }
+.slideshow__images { background: var(--surface); }
+.slideshow__images > img { display: block; width: 100%; height: auto; }
 
-.slideshow__images > img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Ein fester Bildbereich verhindert Sprünge zwischen Hoch- und Querformat. */
-.slideshow--ready .slideshow__images {
-  aspect-ratio: 4 / 3;
-  background: #f2f2f2;
-}
-
-.slideshow--ready .slideshow__images > img {
-  height: 100%;
-  object-fit: contain;
-}
+/* Fester Bildbereich, damit Hoch- und Querformate keine Layoutsprünge erzeugen.
+   contain zeigt jedes Foto vollständig, ohne Gesichter oder Landschaften abzuschneiden. */
+.slideshow--ready .slideshow__images { aspect-ratio: 4 / 3; }
+.slideshow--ready .slideshow__images > img { height: 100%; object-fit: contain; }
 
 .slideshow__controls {
   display: flex;
@@ -28,39 +14,23 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .slideshow__controls button {
+  min-width: 44px;
   min-height: 44px;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #555;
-  border-radius: 4px;
-  color: #111;
-  background: #fff;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
   font: inherit;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
-.slideshow__controls button:focus-visible {
-  outline: 3px solid #005fcc;
-  outline-offset: 3px;
-}
+.slideshow__controls button:hover { background: var(--ink); color: var(--paper); }
+.slideshow__controls [data-counter] { font-size: 0.75rem; color: var(--muted); }
 
-/* Eigene display-Regeln dürfen das hidden-Attribut nicht überschreiben. */
-.slideshow [hidden] {
-  display: none;
-}
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  max-width: 1200px;
-}
-
-@media (min-width: 1024px) {
-  .photo-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
+/* Ohne JavaScript sind sämtliche Bilder sichtbar; bei aktivem Skript nur das aktuelle. */
+.slideshow [hidden] { display: none; }
