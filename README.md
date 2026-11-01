@@ -55,11 +55,3 @@ Die Originalfotos sind noch nicht für schnelle Downloads verkleinert (insgesamt
 
 Das Konzept wurde um die konkrete CSS-Gestaltung, die verbindlichen Anordnungen für Handy, Tablet und Desktop sowie die Menü- und Slideshow-Bedienung verfeinert. Die ursprünglichen Handskizzen bleiben bestehen. Die ergänzenden Festlegungen stehen in [docs/konzept-phase-2.html](docs/konzept-phase-2.html). Die fertige Konzept-PDF für die Abgabe liegt außerhalb dieses Repositorys vor.
 
-Für die Abgabe:
-
-1. Die Website im Browser ansehen und die Änderungen mit Git committen und ins Classroom-Repository pushen.
-2. Den Reflexionstext in [docs/reflexion.md](docs/reflexion.md) prüfen und bei Bedarf an die eigenen Erfahrungen anpassen.
-3. Die in der Aufgabenstellung vorgesehene Abstimmung zum Werkzeugeinsatz mit der Tutorin oder dem Tutor sowie das Feedback im Creative Lab durchführen, soweit noch nicht geschehen. Eingeholtes Feedback ist hier nicht als bereits erfolgt dokumentiert.
-4. Die bereits vorhandene Konzept-PDF auf PebblePad hochladen und den Reflexionstext in das dortige Textfeld übernehmen (maximal 200 Wörter).
-
-Das HTML-Konzept kann zum Überarbeiten im Editor geöffnet und anschließend über den Browser erneut als PDF gedruckt werden (A4, Hintergrundgrafiken an, Kopf- und Fußzeilen aus).
