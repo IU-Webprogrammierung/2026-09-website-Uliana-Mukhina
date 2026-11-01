@@ -1,6 +1,6 @@
 # Unser Reiserückblick 2026
 
-Persönliche Reisewebsite von Uliana Mukhina mit Erinnerungen an Innsbruck (Januar 2026), Seoul und Da Nang (März 2026). Die Seite stellt außerdem Uliana, Alexander und ihren Hund Franny vor und verlinkt das Instagram-Profil `hey.uliana`.
+Meine Reisewebseite mit Erinnerungen an Innsbruck (Januar 2026), Seoul und Da Nang (März 2026). Die Seite stellt außerdem meinen Ehemann Alexander und unseren Hund Franny vor und verlinkt mein Instagram-Profil `hey.uliana`.
 
 ## Lokal öffnen
 
